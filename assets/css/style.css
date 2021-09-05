@@ -4,6 +4,8 @@ body {
     background-color: #b7bebe;
     margin:0;
  }
+
+ /* HEADER */
  header {
     background-color: #254e58;
     display: flex;
@@ -12,41 +14,41 @@ body {
     background-image: url(../images/skyline.jpg);
     background-attachment:fixed;
     background-size: cover;
-    z-index: 9999;
     background-position: center;    
-    top: 0;   
  }
  header h1 {
     color:rgb(230, 249, 252);
     font-size: 70px;
-    font-weight: bold;
-    padding: 30px;
-    
+    padding: 20px;
+    text-shadow: 2px 2px black;
  }
  header nav {
-     margin: 7px 0px;
-     display: flex;
      flex-wrap: wrap;
-     align-items: flex-start;
      font-size: 25px;
+     display: flex;
+     align-content: flex-start;
  }
-
  header nav ul {
     display: inline-flex;
     list-style: none;   
 }
  header nav ul li a {
-    margin: 50px 30px 0 30px;
+    margin: 40px 20px 0 20px;
     font-weight: lighter;
     font-size: 3.0 vw;
     color: rgb(230, 249, 252); 
     text-decoration: none; 
+    text-shadow: 2px 2px black;
+}
+header nav ul li a:hover {
+    font-weight: bold;
+    
 }
 
 /* HERO */
 .hero-image {
     display: flex;
-    height: 400px;
+    height: 200px;
     width: 100%;
     object-fit: fill;
     background-size: cover;
@@ -55,44 +57,57 @@ body {
     position: -webkit-sticky;
     position: sticky;
     background-attachment: fixed;
-}
-.hero-image img {
-    display: flex;
-    align-self: left;
- 
+    justify-content: center;
+    
+    
 }
 .hero-text {
-    display: flex;
-    align-self: center;
     color:rgb(230, 249, 252);
-    align-self: flex-end;   
+    display: flex;
+    align-self:flex-end;
+    text-shadow: 4px 4px black;
+    font-size: 1.25vw;
+    
+  
+ 
 }
-
 
 /* CONTENT */
 
 .flex-container {
-    display: flex;
+    display: flex;  
     margin: 30px;
     padding: 20px 0 20px 0; 
 }
 .section-title {
     display: flex; 
-    font-size: 35px;
+    font-size: 30px;
     box-sizing: border-box;
     border-right: #254e58 solid 2px;
     justify-content: center;
     padding:0 30px 0px 0;
     color: #254e58;
-    min-width: 300px;
+    min-width: 200px;
+    
 }
 #about {
-    justify-content: space-around;          
+    justify-content: space-between;         
 }
 .about-info {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #254e58;
+    }
+.about-info p {
+    font-size: 20px;
+}    
+.about-info img {
+    max-width: 300px;
+    border: #254e58 solid 3px;
 }
 
 /* PROJECTS SECTION */
@@ -104,10 +119,12 @@ body {
  .flex-big {
     display: flex;
     border: #254e58 solid 3px;
-    flex-basis: 500px;
     height: 400px;
-    margin: 10px;
-    justify-content: flex-start;
+    margin: 10px 30px;  
+ }
+ .flex-big:hover {
+     background-color: #b7bebe;
+     opacity: 50%;
  }
  .flex-big h2 {
     display: flex;
@@ -123,7 +140,11 @@ body {
     border: #254a58 solid 3px;
     width: 300px;
     height: 300px;
-    margin: 30px;
+    margin: 30px 50px;
+}
+.flex-item:hover {
+    background-color: #b7bebe;
+     opacity: 50%;
 }
 .flex-item img {
     width: 100%;
@@ -137,21 +158,55 @@ body {
     padding: 15px;
     color:  #254e58;
 }
+
+/* CONTACT INFO */
+
 .info {
     display: flex;
-    justify-content: space-around;
-    flex: 1;
+    justify-content: space-between;
+    
     align-items: center;
-    flex-direction: row;
+    
 }
 .info h2 {
     display: flex; 
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 1.7vw;
     color: #254e58;
+    margin: 0 40px;
 }
  
+/* MEDIA QUERIES */
 
+@media screen and (max-width: 980px) {
+    header {
+        width: 100%;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 60px ;
+    }
+    .section-title {
+        width: 80%;
+        font: 25px;
+    }
+    .flex-big {
+        width: 100%;
+    }
+    .projects {
+        width: 100%;       
+    }
+}
 
- 
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 575px) {
+    .info {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
  
