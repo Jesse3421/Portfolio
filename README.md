@@ -13,5 +13,6 @@ https://jesse3421.github.io/Portfolio/
 ## Contribution
 Made with ❤️ by Jesse Koon 
  
-./assets/images/screencapture-file-Users-jessekoon-Jesse3421-Portfolio-index-html-2021-09-05-10_02_21.png
- 
+
+ ![Screenshot](/assets/images/screencapture-file-Users-jessekoon-Jesse3421-Portfolio-index-html-2021-09-05-10_02_21.png)
+Format: ![Alt Text](url)
