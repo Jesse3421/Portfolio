@@ -118,6 +118,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 30px;
 }
  .flex-big {
     display: flex;
@@ -144,6 +145,8 @@ header nav ul li a:hover {
     width: 300px;
     height: 300px;
     margin: 30px 50px;
+    overflow: hidden;
+    
 }
 .flex-item:hover {
     background-color: var(--secondary-color);
@@ -151,6 +154,10 @@ header nav ul li a:hover {
 }
 .flex-item img {
     width: 100%;
+    height: auto;
+    
+    
+
 }
 .flex-item h2 {
     display: flex;
