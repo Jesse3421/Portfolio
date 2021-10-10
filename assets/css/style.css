@@ -124,7 +124,8 @@ header nav ul li a:hover {
     display: flex;
     border: var(--primary-color) solid 3px;
     height: 450px;  
-    margin: 10px 30px;  
+    margin: 10px 30px; 
+    width: 500px; 
  }
  .flex-big:hover {
      background-color: var(--secondary-color);
